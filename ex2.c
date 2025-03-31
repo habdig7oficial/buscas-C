@@ -35,13 +35,13 @@ int main(){
     long int matriculas[2000];
     int size = sizeof(matriculas) / sizeof(matriculas[0]);
     printf("%d\n", size);
-    for(int i = 1111111111; i < size; i++){
-        matriculas[i] = i;
-        printf("%d", i);
+    for(int i = 0; i < size; i++){
+        matriculas[i] = 1000000000 + (i + 1);
+        printf("%ld\n", matriculas[i]);
     }
 
 
-    long int *res = busca_matriculas(1111111113, size, matriculas);
+    long int *res = busca_matriculas(1000000001 , size, matriculas);
     printf("%ld\n", res == NULL? -1: *res);
     //busca_matriculas(1, size, matriculas);
 }   
