@@ -7,7 +7,7 @@ struct BuscaBin{
     int max;
 };
 
-long int *busca_matriculas(long int matricula, int lenght, long int matriculas[10]){
+long int *busca_matriculas(long int matricula, int lenght, long int matriculas[]){
     struct BuscaBin ctrl= {
         .min = 0,
         .max = lenght
