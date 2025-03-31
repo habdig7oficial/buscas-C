@@ -52,6 +52,6 @@ int main(){
 
 
 
-    int res = busca_funcionarios("vitor" , size, funcionarios);
+    int res = busca_funcionarios("karen" , size, funcionarios);
     printf("%d\n", res);
 }   
